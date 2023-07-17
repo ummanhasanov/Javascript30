@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+}
+
+
+body {
+  background: #ceb31d;
+  color: white;
+  display: flex;
+  font-family: "helvetica neue", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
