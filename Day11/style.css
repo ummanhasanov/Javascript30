@@ -59,8 +59,13 @@ body {
     width: 100%;
     height: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: var(--base)x;
     position: relative;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
 }
 
 .progress__filled {
@@ -92,13 +97,14 @@ body {
     position: inherit;
     bottom: 0;
     left: 0;
-    /* width: 1%; */
     background-color: rgba(0, 0, 0, 0.7);
     /* Add a semi-transparent background for better visibility */
     padding: 10px;
     display: block;
     align-items: center;
     justify-content: space-between;
+    /* width: 100%; */
+    margin-top: -10px;
 }
 
 
@@ -108,11 +114,12 @@ body {
     background: #222;
 }
 
-.player {
+
+/* .player {
     background: #333;
     padding: 20px;
     border-radius: 10px;
-}
+} */
 
 .viewer {
     width: 100%;
